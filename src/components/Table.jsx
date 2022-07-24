@@ -31,9 +31,19 @@ const Table = () => {
                         <p>Soft UI Shopify Version</p>
                     </CompanyDiv>
                     <MembersDiv>
-                        <span>
-                        
-                        </span>
+                        <ImageDiv>
+                        <Images>
+                            <img src="https://image.shutterstock.com/image-photo/headshot-portrait-smiling-african-american-260nw-1667439898.jpg" alt="" />
+                        </Images >
+
+                        <Images  >
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTieNYaC3O9CcHM-O5pOakYAwyckoj9qBa8-g&usqp=CAU" alt="" />
+                        </Images>
+
+                        <Images>
+                            <img src="https://www.morganstanley.com/content/dam/msdotcom/people/tiles/miriam-faghihi.jpg.img.490.medium.jpg/1595876429967.jpg" alt="" />
+                        </Images>
+                        </ImageDiv>
                     </MembersDiv>
                     <BudgetDiv>
                         <p>$14,000</p>
@@ -61,7 +71,18 @@ const Table = () => {
 
                         <p> Progress Track</p>
                     </CompanyDiv>
-                    <MembersDiv></MembersDiv>
+                    <MembersDiv>
+                    <ImageDiv>
+                        <Images>
+                            <img src="https://image.shutterstock.com/image-photo/headshot-portrait-smiling-african-american-260nw-1667439898.jpg" alt="" />
+                        </Images >
+
+                        <Images  >
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTieNYaC3O9CcHM-O5pOakYAwyckoj9qBa8-g&usqp=CAU" alt="" />
+                        </Images>
+
+                        </ImageDiv>
+                    </MembersDiv>
                     <BudgetDiv>
                         <p>$3,000</p>
                     </BudgetDiv>
@@ -83,7 +104,25 @@ const Table = () => {
                         </span>
                         <p>Fix Platform Errors</p>
                     </CompanyDiv>
-                    <MembersDiv></MembersDiv>
+                    <MembersDiv>
+                    <ImageDiv>
+                        <Images>
+                            <img src="https://image.shutterstock.com/image-photo/headshot-portrait-smiling-african-american-260nw-1667439898.jpg" alt="" />
+                        </Images >
+
+                        <Images  >
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTieNYaC3O9CcHM-O5pOakYAwyckoj9qBa8-g&usqp=CAU" alt="" />
+                        </Images>
+
+                        <Images>
+                            <img src="https://www.morganstanley.com/content/dam/msdotcom/people/tiles/miriam-faghihi.jpg.img.490.medium.jpg/1595876429967.jpg" alt="" />
+                        </Images>
+
+                        <Images>
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZXxlbnwwfHwwfHw%3D&w=1000&q=80" alt="" />
+                        </Images>
+                        </ImageDiv>
+                    </MembersDiv>
                     <BudgetDiv>
                         <p>Not Set</p>
                     </BudgetDiv>
@@ -102,7 +141,18 @@ const Table = () => {
                         </span>
                         <p> Launch New Mobile App</p>
                     </CompanyDiv>
-                    <MembersDiv></MembersDiv>
+                    <MembersDiv>
+                    <ImageDiv>
+                        <Images>
+                            <img src="https://image.shutterstock.com/image-photo/headshot-portrait-smiling-african-american-260nw-1667439898.jpg" alt="" />
+                        </Images >
+
+                        <Images  >
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTieNYaC3O9CcHM-O5pOakYAwyckoj9qBa8-g&usqp=CAU" alt="" />
+                        </Images>
+
+                        </ImageDiv>
+                    </MembersDiv>
                     <BudgetDiv>
                         <p>$20,000</p>
                     </BudgetDiv>
@@ -133,7 +183,21 @@ const Table = () => {
                         </span>
                         <p>Add New Landing Page</p>
                     </CompanyDiv>
-                    <MembersDiv></MembersDiv>
+                    <MembersDiv>
+                    <ImageDiv>
+                        <Images>
+                            <img src="https://image.shutterstock.com/image-photo/headshot-portrait-smiling-african-american-260nw-1667439898.jpg" alt="" />
+                        </Images >
+
+                        <Images  >
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTieNYaC3O9CcHM-O5pOakYAwyckoj9qBa8-g&usqp=CAU" alt="" />
+                        </Images>
+
+                        <Images>
+                            <img src="https://www.morganstanley.com/content/dam/msdotcom/people/tiles/miriam-faghihi.jpg.img.490.medium.jpg/1595876429967.jpg" alt="" />
+                        </Images>
+                        </ImageDiv>
+                    </MembersDiv>
                     <BudgetDiv>
                         <p>$4,000</p>
                     </BudgetDiv>
@@ -153,7 +217,21 @@ const Table = () => {
                         </span>
                         <p>Redesign Online Store</p>
                     </CompanyDiv>
-                    <MembersDiv></MembersDiv>
+                    <MembersDiv>
+                    <ImageDiv>
+                        <Images>
+                            <img src="https://media.thetab.com/blogs.dir/90/files/2018/05/smile-portrait-face-person-people-human.jpg" alt="" />
+                        </Images >
+
+                        <Images  >
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTieNYaC3O9CcHM-O5pOakYAwyckoj9qBa8-g&usqp=CAU" alt="" />
+                        </Images>
+
+                        <Images>
+                            <img src="https://www.morganstanley.com/content/dam/msdotcom/people/tiles/miriam-faghihi.jpg.img.490.medium.jpg/1595876429967.jpg" alt="" />
+                        </Images>
+                        </ImageDiv>
+                    </MembersDiv>
                     <BudgetDiv>
                         <p>
                             $2,000
@@ -340,5 +418,21 @@ grid-column-end:6;
     color: #67748E;
  }
 
+`
+
+const Images = styled.div`
+    width:15%;
+    height:22px;
+    margin-left: -9px;
+    & img {
+        border-radius: 50%;
+        width:100%;
+        height:100%;
+    }
+`
+const ImageDiv = styled.div`
+width:100%;
+display:flex;
+margin: 1px 22px 0px 45px;
 `
 
