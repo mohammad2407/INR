@@ -1,0 +1,81 @@
+.MuiPaper-rounded {
+    width: 476px;
+    height: 581px;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}
+
+.Login-title {
+    margin: 72px 95px 24px 96px;
+    width: 280px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+
+}
+
+.frgt-pwd {
+    height: 7px;
+
+    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    margin: 19px 0px;
+
+    color: #464B4E;
+}
+
+.span2 {
+    margin: 20px 0px
+}
+
+.input-div {
+    width: 280px;
+    margin: 20px 95px 05px 96px;
+
+
+}
+
+.input-label {
+
+    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 27px;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    color: #464B4E;
+}
+
+.input-enter {
+    border: none;
+    border-bottom: 1px solid #464B4E;
+    outline: none;
+    width: 97%;
+}
+
+.Enter-btn {
+width: 285px;
+height: 48px;
+background: #464B4E;
+border-radius: 5px;
+border:none;
+outline: none;
+margin: 0px 66px 76px 90px;
+
+font-family: Montserrat,Verdana, Geneva, Tahoma, sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+}

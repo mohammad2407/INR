@@ -4,7 +4,14 @@ import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Link from '@mui/material/Link';
 import Table from './Table';
 import { OrderComp } from './OrderComp'
+import {AuthContext} from './context/DashBoardContext'
+
+
 const Dashboard = () => {
+
+  const {isOpen, handleClickClose, handleClickOpen} = React.useContext(AuthContext)
+
+
     return (
         <Home>
             <SideNavDiv>
@@ -97,7 +104,7 @@ const Dashboard = () => {
                     <SideNavTextDiv>Sign Up</SideNavTextDiv>
                 </SideNavOptions>
 
-                <LoginDiv>
+                <LoginDiv onClick={() => handleClickOpen()}>
                     <p>LOGIN</p>
                 </LoginDiv>
             </SideNavDiv>
@@ -259,6 +266,9 @@ const Dashboard = () => {
                     </OrdersDiv>
                 </FlexDiv>
             </HoldingDiv>
+
+      
+
         </Home>
     )
 }
