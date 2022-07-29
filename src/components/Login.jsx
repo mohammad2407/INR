@@ -2,38 +2,18 @@ import * as React from 'react';
 import Dialog from '@mui/material/Dialog';
 import { AuthContext } from './context/DashBoardContext'
 import "./Login.css"
-import { StyledEngineProvider } from '@mui/material/styles';
-import {
-    ThemeProvider,
-    createTheme,
-    experimental_sx as sx,
-  } from '@mui/material/styles';
 
-  import { CacheProvider } from '@emotion/react';
-import createCache from '@emotion/cache';
-
-const cache = createCache({
-  key: 'css',
-  prepend: true,
-});
 export const Login = () => {
 
     const { isOpen, handleClickClose } = React.useContext(AuthContext)
 
 
     return (
-        <div style={{border:'1px solid black'}}>
-            <CacheProvider value={cache}>
-            {/* <StyledEngineProvider injectFirst> */}
-            <ThemeProvider theme = {finalTheme} >
+        <div>
+
             <Dialog
                 open={isOpen}
                 onClose={() => handleClickClose()}
-                // aria-labelledby="alert-dialog-title"
-                // aria-describedby="alert-dialog-description"
-                
-                
-                
 
             >
                 <div className='Login-title'>
@@ -65,28 +45,15 @@ export const Login = () => {
                 <button className='Enter-btn'>
                     Enter
                 </button>
-                
+
             </Dialog>
-            </ThemeProvider>
-            {/* </StyledEngineProvider> */}
-            </CacheProvider>
+
         </div>
     );
 }
 
-const finalTheme = createTheme({
-    components:{
-        Dialog:{
-            styleOverrides:{
-                root: sx({
-                    borderRadius: 9
-                }
-                )
-            }
-        }
-    }
-  });
-  
-  
+
+
+
 
 
