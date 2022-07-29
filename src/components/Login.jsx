@@ -2,15 +2,22 @@ import * as React from 'react';
 import Dialog from '@mui/material/Dialog';
 import { AuthContext } from './context/DashBoardContext'
 import "./Login.css"
+import { CacheProvider } from '@emotion/react';
+import createCache from '@emotion/cache';
+
+const cache = createCache({
+  key: 'css',
+  prepend: true,
+});
 
 export const Login = () => {
 
     const { isOpen, handleClickClose } = React.useContext(AuthContext)
 
-
     return (
         <div>
-
+            <CacheProvider value={cache}>
+           
             <Dialog
                 open={isOpen}
                 onClose={() => handleClickClose()}
@@ -45,15 +52,15 @@ export const Login = () => {
                 <button className='Enter-btn'>
                     Enter
                 </button>
-
+                
             </Dialog>
-
+            </CacheProvider>
         </div>
     );
 }
 
 
-
-
+  
+  
 
 
