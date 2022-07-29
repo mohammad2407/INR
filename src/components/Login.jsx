@@ -1,26 +1,39 @@
 import * as React from 'react';
-import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
-import DialogActions from '@mui/material/DialogActions';
-import DialogContent from '@mui/material/DialogContent';
-import DialogTitle from '@mui/material/DialogTitle';
 import { AuthContext } from './context/DashBoardContext'
-import styled from 'styled-components';
 import "./Login.css"
+import { StyledEngineProvider } from '@mui/material/styles';
+import {
+    ThemeProvider,
+    createTheme,
+    experimental_sx as sx,
+  } from '@mui/material/styles';
+
+  import { CacheProvider } from '@emotion/react';
+import createCache from '@emotion/cache';
+
+const cache = createCache({
+  key: 'css',
+  prepend: true,
+});
 export const Login = () => {
 
     const { isOpen, handleClickClose } = React.useContext(AuthContext)
 
 
     return (
-        <div style={{ borderRadius: "30px" }}>
-
+        <div style={{border:'1px solid black'}}>
+            <CacheProvider value={cache}>
+            {/* <StyledEngineProvider injectFirst> */}
+            <ThemeProvider theme = {finalTheme} >
             <Dialog
                 open={isOpen}
                 onClose={() => handleClickClose()}
-                aria-labelledby="alert-dialog-title"
-                aria-describedby="alert-dialog-description"
-            sx={{borderRadius : 30}}
+                // aria-labelledby="alert-dialog-title"
+                // aria-describedby="alert-dialog-description"
+                
+                
+                
 
             >
                 <div className='Login-title'>
@@ -48,24 +61,32 @@ export const Login = () => {
                     <input type="text" className='input-enter' />
                     <p className='frgt-pwd'>forgot your password?</p>
                 </div>
-                <DialogContent>
-
-                </DialogContent>
 
                 <button className='Enter-btn'>
                     Enter
                 </button>
-                {/* <DialogActions>
-                    <Button onClick={() => handleClickClose()}>Disagree</Button>
-                    <Button onClick={() => handleClickClose()} autoFocus>
-                        Agree
-                    </Button>
-                </DialogActions> */}
+                
             </Dialog>
+            </ThemeProvider>
+            {/* </StyledEngineProvider> */}
+            </CacheProvider>
         </div>
     );
 }
 
-
+const finalTheme = createTheme({
+    components:{
+        Dialog:{
+            styleOverrides:{
+                root: sx({
+                    borderRadius: 9
+                }
+                )
+            }
+        }
+    }
+  });
+  
+  
 
 

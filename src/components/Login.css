@@ -14,6 +14,22 @@
 
 }
 
+
+    
+.MuiPaper-rounded {
+    width: 476px;
+    height: 581px;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 30px;
+}
+
+.MuiDialog-container {
+    border-radius: 30px;
+
+}
+
+
 .frgt-pwd {
     height: 7px;
 
@@ -67,7 +83,7 @@ background: #464B4E;
 border-radius: 5px;
 border:none;
 outline: none;
-margin: 0px 66px 76px 90px;
+margin: 60px 66px 76px 90px;
 
 font-family: Montserrat,Verdana, Geneva, Tahoma, sans-serif;
 font-style: normal;
