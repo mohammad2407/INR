@@ -210,7 +210,24 @@ const Dashboard = () => {
 
                         </EventsIcon>
                     </EventsButton>
+                    
+                    <EventsButton>
+                        <EventsText>
+                            <h4>Todays Money</h4>
+                            <h3>$53,000</h3>
+                        </EventsText>
 
+                        <EventsIcon>
+                            <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.8333 18.4515C13.9913 18.4515 12.5238 18.0965 11.6667 17.5V18.4515C11.6667 19.3342 13.4579 20 15.8333 20C18.2088 20 20 19.3342 20 18.4515V17.5C19.1429 18.0965 17.6754 18.4515 15.8333 18.4515Z" fill="white" />
+                                <path d="M15.8333 15.9515C13.9913 15.9515 12.5238 15.5965 11.6667 15V15.9515C11.6667 16.8342 13.4579 17.5 15.8333 17.5C18.2088 17.5 20 16.8342 20 15.9515V15C19.1429 15.5965 17.6754 15.9515 15.8333 15.9515Z" fill="white" />
+                                <path d="M15.8333 13.4515C13.9913 13.4515 12.5238 13.0965 11.6667 12.5V13.4515C11.6667 14.3342 13.4579 15 15.8333 15C18.2088 15 20 14.3342 20 13.4515V12.5C19.1429 13.0965 17.6754 13.4515 15.8333 13.4515Z" fill="white" />
+                                <path d="M15.8333 9.16669C13.4579 9.16669 11.6667 9.88335 11.6667 10.8334C11.6667 11.7834 13.4579 12.5 15.8333 12.5C18.2088 12.5 20 11.7834 20 10.8334C20 9.88335 18.2088 9.16669 15.8333 9.16669Z" fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7143 8C12.581 8 10.4762 9.07156 10.4762 10.6667V13.3333H0.436508C0.195556 13.3333 0 13.1342 0 12.8889V0.444444C0 0.199111 0.195556 0 0.436508 0H17.8968C18.1378 0 18.3333 0.199111 18.3333 0.444444V7.47644V8.30178C17.5843 8.10667 16.7008 8 15.7143 8ZM9.16667 4.88889C8.20242 4.88889 7.42063 5.68489 7.42063 6.66667C7.42063 7.64844 8.20242 8.44444 9.16667 8.44444C10.1309 8.44444 10.9127 7.64844 10.9127 6.66667C10.9127 5.68489 10.1309 4.88889 9.16667 4.88889Z" fill="white" />
+                            </svg>
+
+                        </EventsIcon>
+                    </EventsButton>
 
                     <EventsButton>
                         <EventsText>
@@ -283,10 +300,16 @@ const Home = styled.div`
     height: 784px;
     background: #EDE8E8;
     border-radius: 25px;
-    /* border:1px solid black; */
     display: flex;
     flex-direction:row;
     padding: 14px 0px 40px 22px;
+    @media (min-width: 1440px){
+        width: 100%;
+        height: 100%;
+    }
+    @media (min-width: 1150px){
+        width:100%
+    }
 `
 
 const FlexDiv = styled.div`
@@ -302,6 +325,14 @@ const ProjectDiv = styled.div`
     box-shadow: 0px 20px 27px rgba(0, 0, 0, 0.05);
     border-radius: 12px;
     margin: 0px 25px 61px 0px;
+
+    @media (min-width:1440px){
+        width: 65%;
+    }
+
+    @media (min-width:1150px) {
+        width:65%
+    }
 `
 
 const OrdersDiv = styled.div`
@@ -311,12 +342,26 @@ const OrdersDiv = styled.div`
     background: #FFFFFF;
     box-shadow: 0px 20px 27px rgba(0, 0, 0, 0.05);
     border-radius: 12px;
+    @media (min-width: 1400px) {
+        width:31%;
+    }
+
+    @media (min-width:1150px) {
+        width:31%;
+    }
 `
 
 
 const HoldingDiv = styled.div`
         width: 1141px;
         height:100%;
+        @media (min-width: 1440px) {
+            width: 80%;
+        }
+
+        @media (min-width: 1150px){
+            width:80%;
+        }
     `
 
 // --> Side Navigation buttons/ divs
@@ -357,6 +402,9 @@ const SideNavDiv = styled.div`
     display:flex;
     flex-direction: column;
     gap:5px;
+    @media (min-width:1440px){
+        width:20%
+    }
 `
 
 
@@ -368,9 +416,11 @@ border-radius: 8px;
 row-gap:20px;
 
 
+
 :hover{
     box-shadow: 0px 20px 27px rgba(0, 0, 0, 0.05);
     background: #FFFFFF;
+
     & span {
         background: #CB0C9F;
         }
@@ -410,7 +460,7 @@ const SideNavTextDiv = styled.h4`
     letter-spacing: 0.2px;
     color: #67748E;
     font-weight:500;
-    
+    margin:18px 0px;
     `
 
 
@@ -440,15 +490,26 @@ color: #252F40;
 // ---> Events Section    
 
 const EventsDiv = styled.div`
-        width: 100%;
+        width: 98%;
         height:115px;
         display:flex;
         flex-direction:row;
         column-gap:24px;
+        overflow-x:scroll;
+        overflow-y:hidden;
+        &::-webkit-scrollbar{
+                    width:0.01px;
+                    height:0px;
+                    -ms-overflow-style: -ms-autohiding-scrollbar;
+                    &-thumb{
+                        background-color: #cecaca;
+                    }
+
+                }
     `
 
 const EventsButton = styled.div`
-        width:262px;
+       min-width:262px;
         height:82px;
         display: flex;
         background: #FFFFFF;
@@ -457,7 +518,7 @@ const EventsButton = styled.div`
     `
 
 const EventsText = styled.div`
-    margin: 20px 12px 19px 16px ;
+    margin: 20px 10px;
     font-family: 'Segoe UI', 'Open Sans';
     text-align:left;
     & h4{
@@ -487,6 +548,7 @@ box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.12), 0px 2px 4px -1px rgba(0, 0, 0,
 border-radius: 8px;
 
 margin : 16px 0px 30px 78px;
+/* margin: 10px 24px 0px; */
 
 & svg  {
         
@@ -500,12 +562,13 @@ margin : 16px 0px 30px 78px;
 const NavigationDiv = styled.div`
     width:100%;
     height:90px;
+    display:flex;
+    justify-content:space-between;
 
 `
 
 const RouterDiv = styled.div`
 width: 150px;
-float: left;
  & h3 {
     height:27px;
         color:#252F40;
@@ -526,6 +589,10 @@ float : right;
 display: flex;
 flex-direction:row;
 gap : 10px;
+
+@media (min-width:1440px) {
+    width:31%;
+}
 
 `
 

@@ -18,6 +18,7 @@ const Table = () => {
 
                 </HeadingContent>
 
+            <ContainerWrapper>
                 <LiDiv>
                     <CompanyDiv>
                         <span>
@@ -242,6 +243,44 @@ const Table = () => {
                     </CompletionDiv>
                 </LiDiv>
 
+
+                <LiDiv>
+                    <CompanyDiv>
+                        <span>
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.0963 0H1.9037C0.852305 0 0 0.852305 0 1.9037V19.0963C0 20.1477 0.852305 21 1.9037 21H19.0963C20.1477 21 21 20.1477 21 19.0963V1.9037C21 0.852305 20.1477 0 19.0963 0Z" fill="#DC395F" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.37219 5.42259C8.37219 6.13887 7.79538 6.68537 7.10683 6.68537C6.41829 6.68537 5.84164 6.13878 5.84164 5.42259C5.84164 4.7068 6.41829 4.16037 7.10683 4.16037C7.79538 4.16037 8.37219 4.7068 8.37219 5.42259ZM4.37158 14.3952C4.37158 14.113 4.40888 13.7671 4.48323 13.4467H4.48331L5.43215 9.52083H3.96225L4.40888 7.8523H7.94434L6.54863 13.4587C6.45559 13.817 6.41837 14.1141 6.41837 14.321C6.41837 14.6796 6.59265 14.7844 6.86515 14.8466C7.0311 14.8842 8.35342 14.8579 9.07328 13.2374L9.99 9.52083H8.50133L8.94795 7.8523H12.1297L11.7204 9.74665C12.2785 8.69124 13.3951 7.68843 14.4929 7.68843C15.6651 7.68843 16.6328 8.53417 16.6328 10.1547C16.6328 10.5691 16.5769 11.0202 16.4281 11.5288L15.8325 13.695C15.7769 13.9217 15.7395 14.1099 15.7395 14.2795C15.7395 14.6561 15.8884 14.8444 16.1675 14.8444C16.4467 14.8444 16.8002 14.6367 17.2096 13.4879L18.0283 13.8079C17.5444 15.5228 16.67 16.2385 15.5721 16.2385C14.2881 16.2385 13.6743 15.4664 13.6743 14.4108C13.6743 14.1095 13.7113 13.789 13.8044 13.4686L14.4185 11.2452C14.4929 11.0001 14.5115 10.7742 14.5115 10.5668C14.5115 9.85103 14.0836 9.41743 13.3951 9.41743C12.5205 9.41743 11.9437 10.0532 11.6459 11.2779L10.4549 16.1153H8.37106L8.74511 14.5952C8.13254 15.6142 7.28176 16.2453 6.23235 16.2453C4.967 16.2453 4.37158 15.5071 4.37158 14.3952Z" fill="white" />
+                            </svg>
+
+                        </span>
+                        <p>Redesign Online Store</p>
+                    </CompanyDiv>
+                    <MembersDiv>
+                    <ImageDiv>
+                        <Images>
+                            <img src="https://media.thetab.com/blogs.dir/90/files/2018/05/smile-portrait-face-person-people-human.jpg" alt="" />
+                        </Images >
+
+                        <Images  >
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTieNYaC3O9CcHM-O5pOakYAwyckoj9qBa8-g&usqp=CAU" alt="" />
+                        </Images>
+
+                        <Images>
+                            <img src="https://www.morganstanley.com/content/dam/msdotcom/people/tiles/miriam-faghihi.jpg.img.490.medium.jpg/1595876429967.jpg" alt="" />
+                        </Images>
+                        </ImageDiv>
+                    </MembersDiv>
+                    <BudgetDiv>
+                        <p>
+                            $2,000
+                        </p>
+                    </BudgetDiv>
+                    <CompletionDiv>
+                        <p>80%</p>
+                    </CompletionDiv>
+                </LiDiv>
+
+                </ContainerWrapper>
             </Container>
 
         </TableDiv>
@@ -255,6 +294,23 @@ const TableDiv = styled.div`
     
     width:100%;
     height:100%;
+    
+
+`
+
+const ContainerWrapper = styled.div`
+    height:300px;
+    width:100%;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    &::-webkit-scrollbar{
+                    width:0.01px;
+                    height:1px;
+                    -ms-overflow-style: -ms-autohiding-scrollbar;
+                    &-thumb{
+                        background-color: #cecaca;
+                    }
+                }
 
 `
 
@@ -264,6 +320,8 @@ const TableTitleDiv = styled.div`
     height:60px;
     font-family : 'OpenSans', 'Segoe UI';
     text-align:left;
+    position:sticky;
+    
     & h3 {
     height: 22px;
     font-size: 16px;
@@ -299,6 +357,7 @@ const TableTitleDiv = styled.div`
 const Container = styled.div`
     width: 94%;
     margin: 24px 24px 40px 24px;
+    height:100%;
 `
 const HeadingContent = styled.div`
     display: grid;
@@ -311,6 +370,14 @@ const HeadingContent = styled.div`
     letter-spacing: -0.387234px;
     font-weight:600;
     color: #8392AB;
+    
+    @media (min-width: 1440px) {
+        grid-template-columns: repeat(6, 9rem)
+    }
+
+    @media (min-width: 1150px) {
+        grid-template-columns: repeat(6, 8rem)
+    }
 
 `
 
@@ -342,6 +409,7 @@ grid-column-end:6;
 
 const LiDiv = styled.div`
     display: grid;
+
     grid-template-columns: repeat(6, 139px);
     width: 100%;
     height: 60px;   
@@ -351,6 +419,14 @@ const LiDiv = styled.div`
     letter-spacing: -0.387234px;
     font-weight:600;
     color: #8392AB;
+
+    @media (min-width: 1440px) {
+        grid-template-columns: repeat(6, 9rem)
+    }
+
+    @media (min-width: 1150px) {
+        grid-template-columns: repeat(6, 8rem)
+    }
 
 `
 
@@ -434,5 +510,15 @@ const ImageDiv = styled.div`
 width:100%;
 display:flex;
 margin: 1px 22px 0px 45px;
+
+@media (min-width: 1440px) {
+        width: 90%;
+        margin: 1px 22px 0px 13px;
+    }
+
+    @media ( min-width: 1150px){
+        width:90%;
+        margin: 1px 22px 0px 13px;
+    }
 `
 
